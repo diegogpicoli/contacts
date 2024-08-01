@@ -21,3 +21,10 @@ model User {
 
   name String
 }
+
+model Tag {
+  id Int @id @default(autoincrement())
+
+  name        String @unique
+  observation String?
+}
