@@ -6,9 +6,10 @@ import { UserModule } from './user/user.module';
 import { AuthModule } from './auth/auth.module';
 import { JwtAuthGuard } from './auth/guards/jwt-auth.guard';
 import { TagModule } from './tag/tag.module';
+import { ContactModule } from './contact/contact.module';
 
 @Module({
-  imports: [PrismaModule, UserModule, AuthModule, TagModule],
+  imports: [PrismaModule, UserModule, AuthModule, TagModule, ContactModule],
   controllers: [AppController],
   providers: [
     AppService,
